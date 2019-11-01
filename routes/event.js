@@ -31,7 +31,7 @@ router.post("/", async (req, res) => {
   console.log(req.body)
   const event = new DateTime({
     name: req.body.name,
-    date: req.body.Date,
+    date: new Date(req.body.Date),
     time: req.body.Time
   })
   try {

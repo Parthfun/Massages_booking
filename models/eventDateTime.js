@@ -6,7 +6,7 @@ const dateTimeSchema = new mongooes.Schema({
         required:true
     },
     date: {
-        type:String,
+        type:Date,
         required: true
     },
     time: { 
